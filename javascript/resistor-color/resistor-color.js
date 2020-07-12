@@ -1,15 +1,8 @@
-//
 // This is only a SKELETON file for the 'Resistor Color' exercise. It's been provided as a
 // convenience to get you started writing code faster.
-//
 
 export const colorCode = (color) => {
-  color.toLowerCase();
-  let num = 0;
-  COLORS.map((item, index) => {
-    if (color === item) return (num = index);
-  });
-  return num;
+  return COLORS.indexOf(color);
 };
 
 export const COLORS = [
